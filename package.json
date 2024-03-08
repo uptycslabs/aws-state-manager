@@ -1,0 +1,36 @@
+{
+  "name": "@uptycs/uptycs_package_template",
+  "version": "1.0.0",
+  "description": "Uptycs template package",
+  "source": "src/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "exports": {
+    "require": "./dist/index.js",
+    "default": "./dist/index.modern.js"
+  },
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf dist && microbundle -f esm,cjs",
+    "dev": "microbundle watch",
+    "test": "jest",
+    "release": "npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uptycs/uptycs_package_template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Uptycs/uptycs_package_template/issues"
+  },
+  "homepage": "https://github.com/Uptycs/uptycs_package_template#readme",
+  "devDependencies": {
+    "microbundle": "0.14.2",
+    "jest": "28.0.1",
+    "rimraf": "3.0.2"
+  },
+  "dependencies": {}
+}
