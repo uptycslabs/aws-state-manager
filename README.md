@@ -25,7 +25,7 @@ This solution leverages AWS Systems Manager [AWS Automations](https://docs.aws.a
 automatically install the Uptycs Agent on EC2 Instances.
 
 Uptycs Now supports managed distributor packages in us-east-1 and us-east-2.   If you wish to 
-use Uptycs managed packages follow the guide here [Using Uptycs Distributor Packages](./supported-distributor-packages/README.md)
+use Uptycs managed packages follow the guide here [Using Uptycs Distributor Packages](https://github.com/uptycslabs/aws-state-manager/blob/master/supported-distributor-packages/README.md)
 
 
 
@@ -92,7 +92,7 @@ The following scripts are provided as part of this solution. Some scripts are in
 1. Create a local copy of this solution using the git clone command.
 
     ```shell
-    git clone https://github.com/jharris-uptycs/aws-state-manager
+    git clone https://github.com/uptycslabs/aws-state-manager
     ```
 2. Unzip the tarball
 
