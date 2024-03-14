@@ -1,0 +1,15 @@
+version: 0.2
+phases:
+    install:
+        commands:
+            - echo "Build package sources"
+    build:
+        commands:
+            - echo "S3 Upload Beginning"
+            - python -V
+            - export ACCID=$(aws sts get-caller-identity --query 'Account' | tr -d '"')
+            - aws s3 sync . s3://$STAGING_BUCKET/ --delete --exclude "*" --include "*.json" --include "*.yml" --include "*.yaml"
+            - echo "S3 Upload Complete..."
+    post_build:
+        commands:
+            - echo "Deploy complete"    # - paths

@@ -1,0 +1,4 @@
+2024-03-12 14:34:39,069 - ERROR - Please provide either an API key file or all parameters: key, secret, domain, customerId, domainSuffix
+2024-03-12 14:45:30,623 - ERROR - Please provide either an API key file or all parameters: key, secret, domain, customerId, domainSuffix
+2024-03-12 14:46:23,847 - ERROR - Please provide either an API key file or all parameters: key, secret, domain, customerId, domainSuffix
+2024-03-12 14:49:18,887 - CRITICAL - Success! Server responded with: 200
